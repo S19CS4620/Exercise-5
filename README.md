@@ -1,4 +1,3 @@
-=====================================
 Exercise 5: an example using visitors
 =====================================
 
@@ -12,19 +11,21 @@ then you should output the prefix and postfix of expression after you visit it a
 ------------------------------
 1) You should have the following:
 
-	VisitorStart/
-		src/
-			ast_visitors/
-				TestVisitor.java
-			ast/visitor/
-				......
-			ast/node/
-				......
-			Drivers/
-				[Empty]				
+* VisitorStart/
+  * src/
+    * ast_visitors/
+      * TestVisitor.java
+    * ast/visitor/
+      * ......
+    * ast/node/
+      * ......
+    * Drivers/
+      * TestDriver.java			
 	
 ---------------------------------
-2) Create a TestDriver.java file in VisitorStart/src/Drivers/. Here is the source code for Test Driver.java
+2) Examine the TestDriver.java file in VisitorStart/src/Drivers/. Here is the source code for TestDriver.java:
+
+```
 package Drivers;
 
 /*
@@ -66,7 +67,7 @@ public class TestDriver {
 		}  
 	}
 }
-
+```
 
 ---------------------------------
 3) Now you can start to add some code into TestVisitor.java to define the behavior of visitor. Make sure that you understand what the visitor should do while entering the node and leaving the node.
